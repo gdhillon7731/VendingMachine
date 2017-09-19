@@ -24,4 +24,10 @@ public class VendingMachineTest {
         Boolean validCoin = vendingMachine.isValidCoin("dime");
         assertEquals(true, validCoin);
     }
+    @Test
+    public void nickel_Valid_Coin_Identifies(){
+        VendingMachine vendingMachine = new VendingMachine();
+        Boolean validCoin = VendingMachine.isValidCoin("nickel");
+        assertEquals(true, validCoin);
+    }
 }
