@@ -9,6 +9,8 @@ public class VendingMachine {
             return false;
         } else if (coin == "quarter") {
             return true;
+        } else if (coin == "dime"){
+            return true;
         }
         return null;
     }
