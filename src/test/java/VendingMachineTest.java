@@ -10,8 +10,13 @@ public class VendingMachineTest {
     public void penny_Invalid_Coin_Identifies(){
         VendingMachine vendingMachine = new VendingMachine();
         Boolean invalidCoin = vendingMachine.isValidCoin("penny");
-        assertEquals("penny", invalidCoin);
+        assertEquals(false, invalidCoin);
     }
-
+    @Test
+    public void quarter_Valid_Coin_Identifies(){
+        VendingMachine vendingMachine = new VendingMachine();
+        Boolean invalidCoin = vendingMachine.isValidCoin("quarter");
+        assertEquals(true, invalidCoin);
+    }
 
 }
