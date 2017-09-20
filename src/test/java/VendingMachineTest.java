@@ -34,6 +34,8 @@ public class VendingMachineTest {
     public void correctMonetaryValueForCoins(){
         VendingMachine vendingMachine = new VendingMachine();
         assertEquals(5, vendingMachine.coinValue(CoinType.NICKEL));
+        assertEquals(10, vendingMachine.coinValue(CoinType.DIME));
+        assertEquals(25, vendingMachine.coinValue(CoinType.QUARTER));
     }
 
 }

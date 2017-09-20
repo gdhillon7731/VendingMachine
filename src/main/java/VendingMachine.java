@@ -21,6 +21,10 @@ public class VendingMachine {
 
         if (coin == CoinType.NICKEL){
             return 5;
+        } else if (coin == CoinType.DIME){
+            return 10;
+        } else if (coin == CoinType.QUARTER){
+            return 25;
         }
         return 0;
     }
