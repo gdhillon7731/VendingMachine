@@ -2,15 +2,15 @@
 public class VendingMachine {
 
 
-    public static Boolean isValidCoin(String coin) {
+    public static Boolean isValidCoin(CoinType coin) {
 
-        if (coin == "penny") {
+        if (coin == CoinType.PENNY) {
             return false;
-        } else if (coin == "quarter") {
+        } else if (coin == CoinType.QUARTER) {
             return true;
-        } else if (coin == "dime") {
+        } else if (coin == CoinType.DIME) {
             return true;
-        } else if (coin == "nickel") {
+        } else if (coin == CoinType.NICKEL) {
             return true;
         } else {
             return null;

@@ -9,25 +9,26 @@ public class VendingMachineTest {
     @Test
     public void penny_Invalid_Coin_Identifies(){
         VendingMachine vendingMachine = new VendingMachine();
-        Boolean invalidCoin = vendingMachine.isValidCoin("penny");
+        Boolean invalidCoin = vendingMachine.isValidCoin(CoinType.PENNY);
         assertEquals(false, invalidCoin);
     }
     @Test
     public void quarter_Valid_Coin_Identifies(){
         VendingMachine vendingMachine = new VendingMachine();
-        Boolean validCoin = vendingMachine.isValidCoin("quarter");
+        Boolean validCoin = vendingMachine.isValidCoin(CoinType.QUARTER);
         assertEquals(true, validCoin);
     }
     @Test
     public void dime_Valid_Coin_Identifies(){
         VendingMachine vendingMachine = new VendingMachine();
-        Boolean validCoin = vendingMachine.isValidCoin("dime");
+        Boolean validCoin = vendingMachine.isValidCoin(CoinType.DIME);
         assertEquals(true, validCoin);
     }
     @Test
     public void nickel_Valid_Coin_Identifies(){
         VendingMachine vendingMachine = new VendingMachine();
-        Boolean validCoin = VendingMachine.isValidCoin("nickel");
+        Boolean validCoin = vendingMachine.isValidCoin(CoinType.NICKEL);
         assertEquals(true, validCoin);
     }
+
 }
