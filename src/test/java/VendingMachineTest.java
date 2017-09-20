@@ -13,4 +13,9 @@ public class VendingMachineTest {
         vendingMachine = new VendingMachine();
     }
 
+    @Test
+    public void no_Coins_Have_Been_Inserted_Displays_Message(){
+        assertEquals("INSERT COIN", vendingMachine.vending_Machine_Display());
+
+    }
 }
