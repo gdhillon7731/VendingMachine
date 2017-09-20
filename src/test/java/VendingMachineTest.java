@@ -1,10 +1,17 @@
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class VendingMachineTest {
 
+    private VendingMachine vendingMachine;
+
+    @Before
+    public void setup(){
+        vendingMachine = new VendingMachine();
+    }
 
     @Test
     public void penny_Invalid_Coin_Identifies(){
