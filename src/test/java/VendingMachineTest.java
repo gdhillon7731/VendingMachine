@@ -30,5 +30,10 @@ public class VendingMachineTest {
         Boolean validCoin = vendingMachine.isValidCoin(CoinType.NICKEL);
         assertEquals(true, validCoin);
     }
+    @Test
+    public void correctMonetaryValueForCoins(){
+        VendingMachine vendingMachine = new VendingMachine();
+        assertEquals(5, vendingMachine.coinValue(CoinType.NICKEL));
+    }
 
 }

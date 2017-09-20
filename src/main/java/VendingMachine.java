@@ -16,6 +16,14 @@ public class VendingMachine {
             return null;
         }
     }
+
+    public int coinValue(CoinType coin){
+
+        if (coin == CoinType.NICKEL){
+            return 5;
+        }
+        return 0;
+    }
 }
 
 
